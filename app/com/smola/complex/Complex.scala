@@ -10,6 +10,12 @@ class Complex(re: Double, im: Double) {
     new Complex(newReal, newImaginary)
   }
 
+  def *(complexNumber: Complex): Complex = {
+    val newReal = complexNumber.real*this.real - complexNumber.imaginary*this.imaginary
+    val newImaginary = complexNumber.real*this.imaginary + complexNumber.imaginary*this.real
+    new Complex(newReal, newImaginary)
+  }
+
   def canEqual(other: Any): Boolean = other.isInstanceOf[Complex]
 
   override def equals(other: Any): Boolean = other match {
