@@ -4,7 +4,7 @@ class Complex(re: Double, im: Double) {
   val real = re
   val imaginary = im
 
-  def conjugate(): Complex = {
+  def Conjugate(): Complex = {
     new Complex(this.real, -this.imaginary)
   }
 

@@ -15,7 +15,7 @@ class ComplexTest extends AnyFunSuite {
   }
   test("Can find conjugate of complex number") {
     // When
-    val actual = underTest.conjugate()
+    val actual = underTest.Conjugate()
     // Then
     val expected = new Complex(1.0, -1.0)
     assert(actual.equals(expected))
