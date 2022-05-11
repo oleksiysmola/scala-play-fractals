@@ -32,5 +32,14 @@ class FunctionTest extends AnyFunSuite {
     val expected = new Complex(0.0, 0.0)
     assert(actual.equals(expected))
   }
+  test("Derivative returns 2 for z = -1") {
+    // Given
+    val complexNumber = new Complex(-1.0, 0.0)
+    // When
+    val actual = underTest.Derivative(complexNumber)
+    // Then
+    val expected = new Complex(2.0, 0.0)
+    assert(actual.equals(expected))
+  }
 
 }
